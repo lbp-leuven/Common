@@ -2,6 +2,8 @@
 stimulusSizePixels = 240;
 stimulusSizeMetric = 75;
 viewDistance = 50;
+stimulusOrientation = 45;
+visualDegrees = 0.0678;
 
 % 1. Compute stimulus size in degrees
 stimulusSizeDegrees = metric2vd(stimulusSizeMetric,viewDistance);
@@ -10,7 +12,7 @@ stimulusSizeDegrees = metric2vd(stimulusSizeMetric,viewDistance);
 [X,Y] = scale2degree(stimulusSizeDegrees, stimulusSizePixels);
 
 % 3. Create the grating
-grating = CreateGrating(X,Y, 45,0.0678);
+grating = CreateGrating(X,Y, stimulusOrientation, visualDegrees);
 
 % 4. Show it
 imshow(grating,[])
