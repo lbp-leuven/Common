@@ -13,7 +13,7 @@ function [ grating ] = CreateGrating( X,Y, or, cpd )
 orientation = or*pi/180;    % Convert degree to radians
 
 X_or = X.*cos(orientation) + Y.*sin(orientation);
-grating = cos(2*pi*cpd.*X_or);
+grating = cos( (2*pi*cpd).*X_or);
 
 end
 
