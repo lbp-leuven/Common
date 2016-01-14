@@ -3,7 +3,7 @@ stimulusSizePixels = 240; % Size in pixels
 stimulusSizeMetric = 75;  % Size in mm
 viewDistance = 100;       % Viewing distance in mm
 stimulusOrientation = 0;  % Orientation in degrees
-cyclesPerDegree = 1.2;
+cyclesPerDegree = 0.5;
 
 % 1. Compute stimulus size in degrees
 stimulusSizeDegrees = metric2vd(stimulusSizeMetric,viewDistance);
