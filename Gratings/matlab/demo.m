@@ -20,3 +20,4 @@ imshow(grating,[])
 % 5. Pixel intensities are in the range [-1, 1], the following line scales
 % the image to [0, 1] range
 gratingScaled = (grating+1)./2;
+imwrite(uint8(gratingScaled.*255),'stim2.bmp','bmp')
